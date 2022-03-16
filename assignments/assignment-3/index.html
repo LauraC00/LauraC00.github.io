@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: #f2f2f2;
+        }
+
+        .tablinks {
+            color: white;
+            font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+            font-size: 1.1rem;
+        }
+
+        .image-text {
+            margin-top: -26.5rem;
+            position: absolute;
+            margin-left: 11rem;
+        }
+
+        h2 {
+            line-height: 1.5em;
+            font-size: 5rem;
+        }
+
+        .row {
+            background-color: white;
+        }
+
+        h3 {
+            font-size: 2.2rem;
+        }
+
+        footer {
+            display: block;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <title>UX Flow Chart</title>
+
+</head>
+
+<body>
+    <!--Navigation menu with tabs-->
+    <nav class="navbar bg-dark py-3" id="navbar">
+        <h1 class="fs-2 text-white text-center ps-4">Assignment 3 - UX Flow Chart </h1>
+
+        <ul class="nav justify-content-center pe-4">
+                <button class="tablinks btn btn-dark btn-outline-light me-2" onclick="openTab(event, 'C&D')" id="defaultOpen">Charts &
+                    Documents</button>
+                <button class="tablinks btn btn-dark btn-outline-light pe-2" onclick="openTab(event, 'Charts')"
+                    >Big Charts</button>
+        </ul>
+    </nav>
+
+    <div class="big-image">
+        <img src="images/Header1.png" class="img-fluid" id="headerimg" />
+        <div class="image-text text-white">
+            <h2>FilmFreeway - UX</h2>
+            <h2>Flow Charts</h2>
+        </div>
+    </div>
+
+    <!--Content in 1st tab-->
+    <div class="container mb-5 mt-0">
+        <div id="C&D" class="tabcontent">
+            <div class="row mt-4 mx-5 pt-3 pb-2 ps-2">
+                <div class="col-sm-12">
+                    <h3>Note</h3>
+                    <hr>
+                    <p>5/6 scenarios start with the user on the homepage and establishing their account status before
+                        being taken to the "Browse Festivals page". I did
+                        this because in order to submit to FilmFreeway/handle your projects you need an account and I
+                        decided to not go with the prefix that the user is already logged in, or that they start the
+                        login/sign up process at a later stage in the scenario.</p>
+                        <p> Bigger versions of the flow charts
+                        can be found in the "big charts" tab or you can right click on the images to open them in a new tab</p>
+                </div>
+            </div>
+
+            <div class="row mt-4 mx-5 py-4 ps-2">
+                <div class="col-sm-6">
+                    <h3 class="pb-1">The Legend</h3>
+                    <p>The legend features in all flow charts. Doing this allows the viewer to easily check what a
+                        symbol in the chart means.</p>
+                    <p>
+                        <ol>
+                            <li>The first symbol is a red oval that indicates the start and end points of the chart</li>
+                            <li>The second symbol is a black arrow showing the flow of the chart</li>
+                            <li>The third symbol is a green rectangle which indicates processes/actions carried out by
+                                the user</li>
+                            <li>The fourth symbol is a yellow diamond that denotes when a decision must be made in the
+                                flow/a condition is being checked</li>
+                            <li>The last symbol is a blue rectangle with the top two corners rounded, this is used to
+                                show a web page the user lands on when going through the flow.
+                        </ol>
+                        </li>
+                </div>
+                <div class="col-sm-6 ps-3">
+                    <img src="images/Legend.png" style="width: 350px" class="mx-auto d-block" />
+                </div>
+            </div>
+
+            <div class="row mt-4 mx-5 py-4">
+                <div class="col-sm-6">
+                    <img src="images/Scenario 1.png" style="width: 470px" class="mx-auto d-block" />
+                </div>
+                <div class="col-sm-6">
+                    <h3 class="pb-1">Scenario 1: </h3>
+                    <p>The user tries to submit a film to a festival without having a film in their FilmFreeway (FF)
+                        account.</p>
+
+                    <p>The user starts on the FF Homepage and either logs in or signs up which we can
+                        see represented in a decision diamond, then they are taken to the "Browse Festivals" page. In
+                        ths scenario the users presses the submit now button for the festvial they wish to submit to but
+                        the user has no projects set up in their FilmFreeway account. As such a pop up asks them to add
+                        a project, which is another decision diamond in the chart. If they select no, the user is
+                        returned to the "Browse Festivals" page, if they select yes they then go through the process of
+                        adding a project.</p>
+                    <p>
+                        They must upload their project info and their video file. Then the user can return to the
+                        "Browse Festivals" page where they can now submit a film. To do this the user starts again by
+                        pressing the submit button, they then choose a category in this festival and add their choice to
+                        the cart/checkout. After this they must input their card details to then pay/complete their
+                        order.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mt-4 mx-5 py-4 ps-2">
+                <div class="col-sm-6">
+                    <h3 class="pb-1">Scenario 2: </h3>
+                    <p>The user searches for festivals that accept music videos and succesfully submits their project to
+                        a film festival which asks them to make a fee payment. </p>
+
+                    <p>The user starts on the FF Homepage and either logs in or signs up which we can
+                        see represented in a decision diamond, then they are taken to the "Browse Festivals" page. From
+                        here the user searchs for music video awards in the search bar and when they find one they press
+                        the submit button.</p>
+                        <p>They then choose a category in this festival and add their choice to
+                        the cart/checkout. After this they must input their card details to then pay/complete their
+                        order which will bring them to the end of this scenario.</p>
+                </div>
+                <div class="col-sm-6 ps-3">
+                    <img src="images/Scenario 2.png" style="width: 470px" class="mx-auto d-block" />
+                </div>
+            </div>
+
+            <div class="row mt-4 mx-5 py-4">
+                <div class="col-sm-6">
+                    <img src="images/Scenario 3.png" style="width: 470px" class="mx-auto d-block" />
+                </div>
+                <div class="col-sm-6">
+                    <h3 class="pb-1">Scenario 3: </h3>
+                    <p>The user changes the poster image of one of their projects.</p>
+
+                    <p>The user starts on the FF Homepage and either logs in or signs up which we can
+                        see represented in a decision diamond, then they are taken to the "Browse Festivals" page. The
+                        user selects the my projects tab to then view their project.</p> 
+                        <p> Here they can press the edit button
+                        that will allow them to pick the option to change the poster image. They can select an image
+                        from the file explorer that opens on their screen, this completes this scenario as there is no
+                        further step required to save the change.</p>
+                </div>
+            </div>
+
+            <div class="row mt-4 mx-5 py-4 ps-2">
+                <div class="col-sm-6">
+                    <h3 class="pb-1">Scenario 4: </h3>
+                    <p>The user looks for festivals that don't require an application fee.</p>
+
+                    <p>This is the one scenario in which I didn't opt to start with the user having to log in/sign
+                        in
+                        because the actions in this scenario don't require an account.</p>
+
+                    <p>Instead the user lands on the FF homepage and selects the "Browse Festivals" page. To look
+                        for a
+                        festival that doesn't require an application fee the user sets the entry fee slider to 0.
+                    </p>
+                </div>
+                <div class="col-sm-6 ps-3">
+                    <img src="images/Scenario 4.png" style="width: 470px" class="mx-auto d-block" />
+                </div>
+            </div>
+
+            <div class="row mt-4 mx-5 py-4">
+                <div class="col-sm-6">
+                    <img src="images/Scenario 5.png" style="width: 470px" class="mx-auto d-block" />
+                </div>
+                <div class="col-sm-6">
+                    <h3 class="pb-1">Scenario 5: </h3>
+                    <p>The user withdraws from a festival submission.</p>
+                    <p>The user starts on the FF Homepage and either logs in or signs up which we can
+                        see represented in a decision diamond, then they are taken to the "Browse Festivals" page.
+                        From here they select the submissions tab and click on the drop down menu. </p>
+
+                    <p>The user selects withdraw from festival for their relevant film, which prompts a pop up,
+                        represented as a decision diamond. If the user confirms their withdrawal their submission is
+                        withdrawn and the user is returned to the submissions page. If the user opts not to
+                        withdraw their film, their film remains submitted and they are returned to the submission
+                        page.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="row mt-4 mx-5 py-4 ps-2">
+                <div class="col-sm-6">
+                    <h3 class="pb-1">(Bonus) Scenario 6: </h3>
+                    <p>The user deletes their FF account</p>
+                    <p>The user starts on the FF Homepage and either logs in or signs up which we can
+                        see represented in a decision diamond, then they are taken to the "Browse Festivals" page.
+                    </p>
+                    <p>The user selects the dashboard and then account settings. In here the user selects delete
+                        account, FF requires the user to press it a second time before a pop up checks for
+                        confirmation of the deletion (show as a decision diamond). If the user selects yes, their
+                        account is deleted, if they select no their account isn't deleted they are returned to the
+                        account settings.</p>
+                </div>
+                <div class="col-sm-6 ps-3">
+                    <img src="images/Scenario 6 Bonus.png" style="width: 450px" class="mx-auto d-block" />
+                </div>
+            </div>
+
+            <div class="row mx-5 pt-3 ps-2">
+                <h4 class="fs-5"><em>References:</em></h4>
+
+                <p>Nunes, Jason, and Andy Pratt. Interactive Design: An Introduction to the Theory and Application
+                    of User-Centered Design. 1st Ed., Rockport Publishers, 2012.</p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!--Content in 2nd tab-->
+    <div id="Charts" class="tabcontent">
+        <div class="container mb-5 mt-3">
+            <div class="row mt-4 mx-5 py-4 ps-2">
+                <div class="col-sm-6 ps-3">
+                    <h3>Scenario 1</h3>
+                    <hr>
+                    <img src="images/Scenario 1.png" style="width: 530px" class="mx-auto d-block pb-5" />
+                </div>
+                <div class="col-sm-6 ps-3">
+                    <h3>Scenario 2</h3>
+                    <hr>
+                    <img src="images/Scenario 2.png" style="width: 530px" class="mx-auto d-block" />
+                </div>
+            </div>
+
+            <div class="row mx-5 py-4 ps-2">
+                <div class="col-sm-6 ps-3">
+                    <h3>Scenario 3</h3><hr>
+                    <img src="images/Scenario 3.png" style="width: 530px" class="mx-auto d-block pb-5" />          
+            </div>
+                <div class="col-sm-6 ps-3">
+                    <h3>Scenario 4</h3><hr>
+                    <img src="images/Scenario 4.png" style="width: 530px" class="mx-auto d-block" />
+                </div>
+            </div>
+
+            <div class="row mx-5 py-4 ps-2">
+                <div class="col-sm-6 ps-3">
+                    <h3>Scenario 5</h3><hr>
+                    <img src="images/Scenario 5.png" style="width: 530px" class="mx-auto d-block pb-5" />          
+            </div>
+                <div class="col-sm-6 ps-3">
+                    <h3>(Bonus) Scenario 6</h3><hr>
+                    <img src="images/Scenario 6 Bonus.png" style="width: 530px" class="mx-auto d-block" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Javascript-->
+    <script>
+        function openTab(evt, tabName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+    <script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+    <!--Footer-->
+    <footer class="mb-3">
+        <a href="#navbar" class="link-secondary"">Back to top</a>
+      </footer>
+
+</body>
+
+</html>
