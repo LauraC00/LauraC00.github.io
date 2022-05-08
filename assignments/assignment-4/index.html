@@ -5,6 +5,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/Icon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap" rel="stylesheet">
@@ -19,7 +20,7 @@
 
 
     <style>
-        /* * {
+       /* * {
             border: 1px red solid;
         }*/
 
@@ -92,7 +93,8 @@
         }
 
         p,
-        ol {
+        ol,
+        ul {
             font-size: 1.1rem;
             line-height: 1.9rem;
         }
@@ -138,7 +140,9 @@
     <div class="bg-img" id="back">
         <div class="container mt-3">
             <nav class="navbar py-3 dark" id="navbar">
-                <h1 class="fs-3 text-white text-center">Assignment 4</h1>
+                <div class="d-flex">
+                <a href=""  onclick="openTab(event, 'C&D')" title="Form Fitness"><img src="images/Iconbkg.png" width="45px" class="img-fluid m-1 ms-3"/></a>
+                <h1 class="fs-3 text-white text-center pt-2 ps-3">Assignment 4</h1></div>
                 <ul class="nav justify-content-center">
                     <button class="tablinks btn me-2" onclick="openTab(event, 'C&D')" id="defaultOpen">Charts &
                         Documents</button>
@@ -155,12 +159,12 @@
     </div>
 
     <div class="list py-3 px-4 d-flex justify-content-between">
-        <a href="#questions" class="link ps-5">Questions</a>
-        <a href="#dsva" class="link">Design Steps/Visual Aspects</a>
-        <a href="#usfl" class="link">User scenario and flow diagrams</a>
-        <a href="#ac" class="link">Application Comparision</a>
-        <a href="#dp" class="link">Design Principles</a>
-        <a href="#wd" class="link pe-5">Workflow Diagram</a>
+        <a href="#questions" class="link ps-5" onclick="openTab(event, 'C&D')"  >Overall</a>
+        <a href="#dsva" class="link" onclick="openTab(event, 'C&D')" >Design Steps/Visual Aspects</a>
+        <a href="#usfl" class="link" onclick="openTab(event, 'C&D')" >User scenario and flow diagrams</a>
+        <a href="#ac" class="link" onclick="openTab(event, 'C&D')" >Application Comparision</a>
+        <a href="#dp" class="link" onclick="openTab(event, 'C&D')" >Design Principles</a>
+        <a href="#wd" class="link pe-5" onclick="openTab(event, 'C&D')" >Workflow Diagram</a>
     </div>
 
 
@@ -169,568 +173,660 @@
         <div id="C&D" class="tabcontent">
 
             <div class="reveal">
-            <div class="row mt-5 pt-4 mx-5 py-4 ps-2 ">
-                <div class="col-sm-12">
-                    <h3 class="fs-1 text-center ">The Prototype</h3>
+                <div class="row mt-5 pt-4 mx-5 py-4 ps-2 ">
+                    <div class="col-sm-12">
+                        <h3 class="fs-1 text-center ">The Prototype</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="row mt-2 mx-5 py-4 ps-2 mb-5 ">
-                <div class="col-sm-7 ps-5">
-                    <p>For this assignment I decided to design a mobile application, specifically, I created a gym
-                        membership-based application. The main users for this application would be the gym members;
-                        certain information gathered from this mobile application would be accessible by the gym
-                        staff/admin through their associated website e.g., member names, email, etc. </p>
-                    <p>Here is the prototype link via Adobe:
-                        <a href="https://xd.adobe.com/view/f2d7b1d1-42ea-4ae6-96dd-869e0127d135-a784/?fullscreen"
-                            target="_blank">Click me!</a></p>
+                <div class="row mt-2 mx-5 py-4 ps-2 mb-5 ">
+                    <div class="col-sm-7 ps-5">
+                        <p>For this assignment I decided to design a mobile application, specifically, I created a gym
+                            membership-based application. The main users for this application would be the gym members;
+                            certain information gathered from this mobile application would be accessible by the gym
+                            staff/admin through their associated website e.g., member names, email, etc. </p>
+                        <p>Here is the prototype link via Adobe:
+                            <a href="https://xd.adobe.com/view/f2d7b1d1-42ea-4ae6-96dd-869e0127d135-a784/?fullscreen"
+                                target="_blank">Click me!</a></p>
+                    </div>
+                    <div class="col-sm-5 video">
+                        <video height="500" width="275" controls>
+                            <source src="images/Prototype.mp4" type="video/mp4">
+                        </video>
+                    </div>
                 </div>
-                <div class="col-sm-5 video">
-                    <video height="500" width="275" controls>
-                        <source src="images/Prototype.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
             </div>
 
             <div class="reveal">
-            <div class="row mt-4 mx-5 py-4 ps-2 text-center">
-                <div class="col-sm-12">
-                    <h3 class="pb-1 fs-1" id="questions">The Questions</h3>
+                <div class="row mt-4 mx-5 py-4 ps-2 text-center bg ">
+                    <div class="col-sm-12">
+                        <h3 class="pb-1 fs-1">Functionality</h3>
+                    </div>
                 </div>
-            </div>
-
-            <div class="row mt-4 mx-5 py-4 ps-2 text-center bg ">
-                <div class="col-sm-12">
-                    <h3 class="pb-1 fs-1">Functionality</h3>
+                <div class="row mx-5 py-4 mb-4 bg ">
+                    <div class="col-sm-6">
+                        <img src="images/scan.png" class="mx-auto d-block" style="width:200px" />
+                    </div>
+                    <div class="col-sm-6 py-2 px-5 mt-2">
+                        <p>I would say the main function of my application is to scan into the gym when you arrive, due
+                            to
+                            the fact the other features included in the mobile application could also be accessed on a
+                            browser-based application, and one would be created to go hand in hand with the mobile
+                            application in a real scenario. </p>
+                    </div>
                 </div>
-            </div>
-            <div class="row mx-5 py-4 mb-4 bg ">
-                <div class="col-sm-6">
-                    <img src="images/scan.png" class="mx-auto d-block" style="width:200px" />
-                </div>
-                <div class="col-sm-6 py-2 px-5 ">
-                    <p>I would say the main function of my application is to scan into the gym when you arrive, due to
-                        the fact the other features included in the mobile application could also be accessed on a
-                        browser-based application, and one would be created to go hand in hand with the mobile
-                        application in a real scenario. </p>
-                </div>
-            </div>
             </div>
 
             <div class="reveal">
-            <div class="row mx-5 py-4 ps-2 text-center ">
-                <div class="col-sm-12">
-                    <h3 class="pb-1 fs-1">Experience</h3>
+                <div class="row mx-5 py-4 ps-2 text-center ">
+                    <div class="col-sm-12">
+                        <h3 class="pb-1 fs-1">User Experience</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="row mx-5 py-4 ">
-                <div class="col-sm-6 pt-4 px-5">
-                    <p>There are many experiences offered to the user such as: the ability to record/monitor the number
-                        of days they’ve gone to the gym based on them scanning in when they arrive (a necessity at the
-                        facility), to record the duration spent there if they chose to scan out when they leave, the
-                        ability to make in-app notes about their work out, to get achievements, access club info, to
-                        sign up for classes at the gym, as well as the ability to watch demos of various exercises they
-                        may wish to try. </p>
+                <div class="row mx-5 py-4 ">
+                    <div class="col-sm-6 px-5">
+                        <p>My products offers a few different user experiences such as being: useful, usable, and
+                            credible.
+                        </p>
+                        <ul>
+                            <li>It is useful as it is the only source available for the user's to scan into the gym. It
+                                is
+                                also
+                                useful in that the user can avail of a plethora pre-recorded exercise videos all in one
+                                place.
+                                It is useful because it has the gym's opening hours and contact information in the app
+                                and
+                                so
+                                the user doesn't need to search online for this information. Lastly it is useful because
+                                user's
+                                can join gym classes directly through the app.</li>
+
+                            <li>It is usable due to the simplicity. It's easy to learn due to clear labelling and the
+                                use of
+                                already established icons e.g., the home icon, search bar, etc. It's effective in offer
+                                explainations to the user e.g., the information modal by the check-ins section, to help
+                                the
+                                user
+                                correctly perform their task. It is efficient as there isn't an unnecessary number of
+                                steps
+                                involved in acomplishing tasks, and also due to the clear labelling mentioned above.
+                            </li>
+
+                            <li>It is credible as it is a direct product of the gym user's would be members of. There is
+                                credibility in the content i.e., the video demonstrations, as they would be performed by
+                                the
+                                gym
+                                employees.</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 pt-3">
+                        <img src="images/UX.png" style="width:500px" class="mx-auto d-block" />
+                    </div>
                 </div>
-                <div class="col-sm-6">
-                    <img src="images/experience.png" style="width:450px" class="mx-auto d-block" />
-                </div>
-            </div>
             </div>
 
             <div class="reveal">
-            <div class="row mt-4 mx-5 py-4 ps-2 text-center bg ">
-                <div class="col-sm-12">
-                    <h3 class="pb-1 fs-1">Data Types</h3>
+                <div class="row mt-4 mx-5 py-4 ps-2 text-center bg ">
+                    <div class="col-sm-12">
+                        <h3 class="pb-1 fs-1">Data Types</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="row mx-5 py-4 mb-4 bg ">
-                <div class="col-sm-6">
-                    <img src="images/scan.png" class="mx-auto d-block" style="width:200px" />
+                <div class="row mx-5 py-4 mb-4 bg ">
+                    <div class="col-sm-6">
+                        <img src="images/scan.png" class="mx-auto d-block" style="width:200px" />
+                    </div>
+                    <div class="col-sm-6 px-5 ">
+                        <p>One data type my application collects is when the user scans their mobile QR code at the gym
+                            when
+                            they arrive, and if they scan out too (optional). My application collects the date and time
+                            and
+                            based on this, in the user's profile, the day and time they scanned in is logged and
+                            displayed,
+                            and if they chose to scan out that is also logged and displayed, as well as the duration
+                            spent
+                            being calculated and displayed. </p>
+                    </div>
                 </div>
-                <div class="col-sm-6 py-2 px-5 ">
-                    <p>One data type my application collects is when the user scans their mobile QR code at the gym when
-                        they arrive, and if they scan out too (optional). My application collects the date and time and
-                        based on this, in the user's profile, the day and time they scanned in is logged and displayed,
-                        and if they chose to scan out that is also logged and displayed, as well as the duration spent
-                        being calculated and displayed. </p>
-                </div>
-            </div>
             </div>
 
             <div class="reveal">
-            <div class="row mx-5 py-4 ps-2 text-center ">
-                <div class="col-sm-12">
-                    <h3 class="pb-1 fs-1">Interactions</h3>
+                <div class="row mx-5 py-4 ps-2 text-center ">
+                    <div class="col-sm-12">
+                        <h3 class="pb-1 fs-1">Interactions</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="row mx-5 py-4 ">
-                <div class="col-sm-6 pt-4 px-5">
-                    <p>There </p>
+                <div class="row mx-5 py-4 ">
+                    <div class="col-sm-6 pt-4 px-5">
+                        <p>There are many interactions offered to the user such as: the ability to record/monitor the
+                            number
+                            of days they’ve gone to the gym based on them scanning in when they arrive (a necessity at
+                            the
+                            facility), to record the duration spent there if they chose to scan out when they leave, the
+                            ability to make in-app notes about their work out, to get achievements, access club info, to
+                            sign up for classes at the gym, as well as the ability to watch demos of various exercises
+                            they
+                            may wish to try. </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="images/interaction.png" style="width:460px" class="mx-auto d-block" />
+                    </div>
                 </div>
-                <div class="col-sm-6">
-                    <img src="images/experience.png" style="width:450px" class="mx-auto d-block" />
-                </div>
-            </div>
             </div>
 
             <div class="reveal">
-            <div class="row mt-4 mx-5 py-4 ps-2 text-center bg ">
-                <div class="col-sm-12">
-                    <h3 class="pb-1 fs-1">Accessibility</h3>
+                <div class="row mt-4 mx-5 py-4 ps-2 text-center bg ">
+                    <div class="col-sm-12">
+                        <h3 class="pb-1 fs-1">Accessibility</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="row mx-5 py-4 mb-5 bg ">
-                <div class="col-sm-6">
-                    <img src="images/wifi.png" class="mx-auto d-block" style="width:450px" />
+                <div class="row mx-5 py-4 mb-5 bg ">
+                    <div class="col-sm-6">
+                        <img src="images/wifi.png" class="mx-auto d-block" style="width:460px" />
+                    </div>
+                    <div class="col-sm-6 py-5 pe-5">
+                        <p>Some aspects of my application do not need internet to run e.g., the QR code, the user
+                            accessing
+                            and altering their profile, and accessing the club info. Other aspects such as logging
+                            in/signing up to the app, watching demo videos, viewing and joining classes from the
+                            schedule,
+                            and receiving notifications. </p>
+                    </div>
                 </div>
-                <div class="col-sm-6 py-5 pe-5">
-                    <p>Some aspects of my application do not need internet to run e.g., the QR code, the user accessing
-                        and altering their profile, and accessing the club info. Other aspects such as logging
-                        in/signing up to the app, watching demo videos, viewing and joining classes from the schedule,
-                        and receiving notifications. </p>
-                </div>
-            </div>
             </div>
 
             <div class="reveal">
-            <div class="row mx-5 py-4 ps-2 text-center ">
-                <div class="col-sm-12">
-                    <h3 class="pb-1 fs-1">Technologies</h3>
+                <div class="row mx-5 py-4 ps-2 text-center ">
+                    <div class="col-sm-12">
+                        <h3 class="pb-1 fs-1">Technologies</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="row mx-5 py-4 ">
-                <div class="col-sm-6 pt-4 px-5">
-                    <p>A technology that is required to fully satisfy my application's functionality would be like the
-                        QR scanner in the gym. As well as this, the accompanying gym website is needed to fully satisfy
-                        the apps functionality e.g., gym staff would add new classes to the schedule through the website
-                        and this would be viewable and then joinable from the mobile app for members. </p>
+                <div class="row mx-5 py-4 ">
+                    <div class="col-sm-6 pt-4 px-5">
+                        <p>A technology that is required to fully satisfy my application's functionality would be like
+                            the
+                            QR scanner in the gym. As well as this, the accompanying gym website is needed to fully
+                            satisfy
+                            the apps functionality e.g., gym staff would add new classes to the schedule through the
+                            website
+                            and this would be viewable and then joinable from the mobile app for members. </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="images/Tech.png" style="width:450px" class="mx-auto d-block" />
+                    </div>
                 </div>
-                <div class="col-sm-6">
-                    <img src="images/experience.png" style="width:450px" class="mx-auto d-block" />
-                </div>
-            </div>
             </div>
 
             <div class="reveal">
-            <div class="row mt-4 mx-5 py-4 ps-2 text-center ">
-                <div class="col-sm-12">
-                    <h3 class="pb-1 fs-1">Devices</h3>
+                <div class="row mt-4 mx-5 py-4 ps-2 text-center ">
+                    <div class="col-sm-12">
+                        <h3 class="pb-1 fs-1">Devices</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="row mx-5 py-4 mb-5 ">
-                <div class="col-sm-6">
-                    <img src="images/FF.png" class="mx-auto d-block" style="width:520px" />
+                <div class="row mx-5 py-4 mb-5 ">
+                    <div class="col-sm-6">
+                        <img src="images/FF.png" class="mx-auto d-block" style="width:520px" />
+                    </div>
+                    <div class="col-sm-6 pt-4 pe-5">
+                        <p>The mobile application would have an accompanying gym website that it would be connected to.
+                            Through the website the user may also access their profile, the club info, make and manage
+                            class
+                            bookings, as well as see their notifications. </p>
+                    </div>
                 </div>
-                <div class="col-sm-6 pt-4 pe-5">
-                    <p>The mobile application would have an accompanying gym website that it would be connected to.
-                        Through the website the user may also access their profile, the club info, make and manage class
-                        bookings, as well as see their notifications. </p>
-                </div>
-            </div>
             </div>
 
             <div class="reveal">
-            <div class="row mt-4 mx-5 py-4 ps-2 text-center ">
-                <div class="col-sm-12">
-                    <h3 class="fs-1" id="dsva">Design steps & Visual Aspects</h3>
+                <div class="row mt-4 mx-5 py-4 ps-2 text-center ">
+                    <div class="col-sm-12">
+                        <h3 class="fs-1" id="dsva">Design steps & Visual Aspects</h3>
+                    </div>
                 </div>
-            </div>
 
-            <div class="row mx-5 py-2 mb-5 ">
-                <div class="col-sm-12 px-5">
-                    <p>The main colours used in my app design are blue, as I found it to be a popular colour associated
-                        with other fitness-related apps, and orange as it is blue’s complementary colour. Buttons that
-                        feature the orange accent progress the user through the system, while grey buttons send the user
-                        back through the application. In my design, I stuck with commonly used symbols to keep things
-                        simple for the user e.g., a bell icon for notifications, arrows to progress through the
-                        application, a house icon for the home screen, a play button for videos, ‘i’ icon for
-                        information etc. I used the same font in my design to keep a consistent feel to the application.
-                    </p>
-                    <p>Scrolling would be implemented where necessary e.g., on the demo categories page, as opposed to
-                        pagination. Also, to save the user from scrolling endlessly and to increase usability, a search
-                        bar is featured in the demos section to help them quickly find the exercise they are looking for
-                        to avoid wasting time in the gym. </p>
-                    <p>I ordered the home screen buttons by the category I thought would be used most often, first being
-                        the QR code to regularly check into the gym, next being the demo videos, third the gym schedule,
-                        and lastly the club info. I refined the ‘me’ section to the last icon in the tab bar as this is
-                        where it is typically found in other mobile applications. </p>
-                    <p>
-                        I included some achievements the members can work towards. Adding a game element to the app, or
-                        gamification, can make an activity seem more interesting and may encourage interaction (Oxford
-                        Dictionary)
-                    </p>
+                <div class="row mx-5 py-2 mb-5 ">
+                    <div class="col-sm-12 px-5">
+                        <p>The main colours used in my app design are blue, as I found it to be a popular colour
+                            associated
+                            with other fitness-related apps, and orange as it is blue’s complementary colour. Buttons
+                            that
+                            feature the orange accent progress the user through the system, while grey buttons send the
+                            user
+                            back through the application. In my design, I stuck with commonly used symbols to keep
+                            things
+                            simple for the user e.g., a bell icon for notifications, arrows to progress through the
+                            application, a house icon for the home screen, a play button for videos, ‘i’ icon for
+                            information etc. I used the same font in my design to keep a consistent feel to the
+                            application.
+                        </p>
+                        <p>Scrolling would be implemented where necessary e.g., on the demo categories page, as opposed
+                            to
+                            pagination. Also, to save the user from scrolling endlessly and to increase usability, a
+                            search
+                            bar is featured in the demos section to help them quickly find the exercise they are looking
+                            for
+                            to avoid wasting time in the gym. </p>
+                        <p>I ordered the home screen buttons by the category I thought would be used most often, first
+                            being
+                            the QR code to regularly check into the gym, next being the demo videos, third the gym
+                            schedule,
+                            and lastly the club info. I refined the ‘me’ section to the last icon in the tab bar as this
+                            is
+                            where it is typically found in other mobile applications. </p>
+                        <p>
+                            I included some achievements the members can work towards. Adding a game element to the app,
+                            or
+                            gamification, can make an activity seem more interesting and may encourage interaction
+                            (Oxford
+                            Dictionary)
+                        </p>
+                    </div>
                 </div>
-            </div>
-            </div>
-
-            <div class="reveal">
-            <div class="row mt-4 mx-5 py-4 ps-2 text-center ">
-                <div class="col-sm-12">
-                    <h3 class="fs-1" id="usfl">User scenarios & simple flow diagrams</h3>
-                </div>
-            </div>
-
-            <div class="row mx-5 py-2 mb-5 ">
-                <div class="col-sm-6 px-5">
-                    <h4>Scenario One</h4>
-                    <div class="line mb-3"></div>
-                    <p>The following is a scenario where the user, already a member, wishes to watch an exercise demo,
-                        shown
-                        through a simple wireframe flow.</p>
-                    <p class="fw-bold">Scenario Description </p>
-                    <p class="fst-italic">Normal flow of events:</p>
-                    <ol>
-                        <li>Gym member selects log in</li>
-                        <li> Member inputs their email and password</li>
-                        <li>Member select demo button</li>
-                        <li>Member selects glutes button</li>
-                        <li>Member selects hip thrust</li>
-                        <li>Member watches video </li>
-                    </ol>
-                    </p>
-
-                    <p><em>Alternate/exceptional flows:</em><br></p>
-                    <p class="ps-3">2a. Incorrect email and/or password<br>
-                        3a. Member select demo icon from tab bar<br>
-                        4a. Member searches for glutes in search bar and selects<br>
-                        5a. Member searches hip thrusts in search bar and select </p>
-                </div>
-                <div class="col-sm-6">
-                    <img src="images/Scenario.png" width="550px" class="mx-auto d-block py-3" />
-                </div>
-            </div>
-
-            <div class="row mx-5 py-2 mb-5">
-                <div class="col-sm-6 px-5">
-                    <h4>Scenario Two</h4>
-                    <div class="line mb-3"></div>
-                    <p>The following is a scenario where the user, already a member, wishes to watch an exercise demo,
-                        shown
-                        through a simple wireframe flow.</p>
-                    <p class="fw-bold">Scenario Description </p>
-                    <p class="fst-italic">Normal flow of events:</p>
-                    <ol>
-                        <li>Member selects schedule button </li>
-                        <li> Member selects class they wish to join </li>
-                        <li>Member selects join button </li>
-                    </ol>
-                    </p>
-
-                    <p class="fst-italic">Alternate/exceptional flows:</p>
-                    <p class="ps-3">1a. Member can’t find class <br>
-                        1b. Class not on selected day <br>
-                        2a. No availability, member can’t join <br>
-                        2b. Member has missed class, member can’t join </p>
-                </div>
-                <div class="col-sm-6">
-                    <img src="images/Scenario2.png" width="550px" class="mx-auto d-block py-5 mt-5" />
-                </div>
-            </div>
             </div>
 
             <div class="reveal">
-            <div class="row mt-4 mx-5 py-4 ps-2 text-center">
-                <div class="col-sm-12">
-                    <h3 class="fs-1" id="ac">Application Comparision</h3>
+                <div class="row mt-4 mx-5 py-4 ps-2 text-center ">
+                    <div class="col-sm-12">
+                        <h3 class="fs-1" id="usfl">User scenarios & simple flow diagrams</h3>
+                    </div>
                 </div>
-            </div>
 
-            <div class="row mx-5 py-2">
-                <div class="col-sm-12 px-5">
-                    <p>As well as my own UX design, I will also look at a mobile application called Virtuagym and JEFIT.
-                        Unfortunately, since my design is centered around being a member of a gym I am limited when it
-                        comes to looking at similar apps i.e. I can’t access other gym-based applications as I am not a
-                        member. Luckily I am a member of one gym and thus can use Virtuagym in my comparison, for the
-                        second real life example required I found an application that offers exercise demos but isn’t
-                        tied to a gym as it is a trait shared with my UX design. Due to these discrepancies, as well as
-                        the fact I have built upon my app so it is not identical to ones I’m aware of/offers more
-                        interactions, I can’t give four of the exact same activities that can be performed.
-                    </p>
-                </div>
-            </div>
-            </div>
+                <div class="row mx-5 py-2 mb-5 ">
+                    <div class="col-sm-6 px-5">
+                        <h4>Scenario One</h4>
+                        <div class="line mb-3"></div>
+                        <p>The following is a scenario where the user, already a member, wishes to watch an exercise
+                            demo,
+                            shown
+                            through a simple wireframe flow.</p>
+                        <p class="fw-bold">Scenario Description </p>
+                        <p class="fst-italic">Normal flow of events:</p>
+                        <ol>
+                            <li>Gym member selects log in</li>
+                            <li> Member inputs their email and password</li>
+                            <li>Member select demo button</li>
+                            <li>Member selects glutes button</li>
+                            <li>Member selects hip thrust</li>
+                            <li>Member watches video </li>
+                        </ol>
+                        </p>
 
-            <div class="reveal">
-            <div class="row mx-5 py-2 mt-5  text-center">
-                <div class="col-sm-12 px-5 ">
-                    <p class="fs-3 fw-bold">Four activities that can be preformed</p>
+                        <p><em>Alternate/exceptional flows:</em><br></p>
+                        <p class="ps-3">2a. Incorrect email and/or password<br>
+                            3a. Member select demo icon from tab bar<br>
+                            4a. Member searches for glutes in search bar and selects<br>
+                            5a. Member searches hip thrusts in search bar and select </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="images/Scenario.png" width="550px" class="mx-auto d-block py-3" />
+                    </div>
                 </div>
-            </div>
-            <div class="row mx-5 py-2 mt-3  text-center">
-                <div class="col-sm-12 px-5">
-                    <h4 class="mt-4">1. Gym Check In</h4>
-                    <div class="line line-center mb-3"></div>
-                </div>
-            </div>
-            <div class="row mx-5 py-2 mb-4 ">
-                <div class="col-sm-4">
-                    <p class=" text-center bg1 py-2 text-white fw-bold">My UX</p>
-                    <p>To check into the gym the user must select the check in code button on the home screen, this
-                        brings up the QR code which is then scannable at their gym location.</p>
-                </div>
-                <div class="col-sm-4">
-                    <p class="text-center bg2 py-2 text-white fw-bold">Virtuagym</p>
-                    <p>To check into the gym the user must select the check in code button on the home screen, this
-                        brings up the QR code which is then scannable at their gym location. </p>
-                </div>
-                <div class="col-sm-4">
-                    <p class="text-center bg1 py-2 text-white fw-bold">JEFIT</p>
-                    <p>This is not a feature offered by this application </p>
-                </div>
-            </div>
-            </div>
 
-            <div class="reveal">
-            <div class="row mx-5 py-2 mt-1 text-center">
-                <div class="col-sm-12 px-5">
-                    <h4 class="mt-4">2. Join classes</h4>
-                    <div class="line line-center mb-3"></div>
+                <div class="row mx-5 py-2 mb-5">
+                    <div class="col-sm-6 px-5">
+                        <h4>Scenario Two</h4>
+                        <div class="line mb-3"></div>
+                        <p>The following is a scenario where the user, already a member, wishes to watch an exercise
+                            demo,
+                            shown
+                            through a simple wireframe flow.</p>
+                        <p class="fw-bold">Scenario Description </p>
+                        <p class="fst-italic">Normal flow of events:</p>
+                        <ol>
+                            <li>Member selects schedule button </li>
+                            <li> Member selects class they wish to join </li>
+                            <li>Member selects join button </li>
+                        </ol>
+                        </p>
+
+                        <p class="fst-italic">Alternate/exceptional flows:</p>
+                        <p class="ps-3">1a. Member can’t find class <br>
+                            1b. Class not on selected day <br>
+                            2a. No availability, member can’t join <br>
+                            2b. Member has missed class, member can’t join </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="images/Scenario2.png" width="550px" class="mx-auto d-block py-5 mt-5" />
+                    </div>
                 </div>
-            </div>
-            <div class="row mx-5 py-2 mb-1">
-                <div class="col-sm-4">
-                    <p class=" text-center bg1 py-2 text-white fw-bold">My UX</p>
-                    <p>To join a class the user may select the schedule button on the home screen, or the schedule icon
-                        on the tab bar. This will bring up the schedule where they can scroll to find a class on a
-                        specific date, or they may open the monthly calendar in the top right corner, or they may choose
-                        to click the filter icon to filter by classes. Once the user finds a class they wish to join
-                        they can click on it, another screen opens displaying more in-depth details and a join button.
-                        Assuming there is available space, the user is then added to the class list. </p>
-                </div>
-                <div class="col-sm-4">
-                    <p class="text-center bg2 py-2 text-white fw-bold">Virtuagym</p>
-                    <p>To join a class the user must select the schedule button on the home screen. This will bring up
-                        the schedule where they can find scroll to find a class on a specific date, or they may open the
-                        monthly calendar. There is also the option to filter by class but the typical filter iconography
-                        isn’t used. Once the user finds a class they wish to join, they can click on it. Some classes
-                        require ‘Small Group PT credits’ to join, whereas some aren’t restricted to this requirement.
-                    </p>
-                </div>
-                <div class="col-sm-4">
-                    <p class="text-center bg1 py-2 text-white fw-bold">JEFIT</p>
-                    <p>As JEFIT is not directly linked to a gym this is not a feature offered by this application</p>
-                </div>
-            </div>
             </div>
 
             <div class="reveal">
-            <div class="row mx-5 py-2  text-center">
-                <div class="col-sm-12 px-5">
-                    <h4 class="mt-4">3. View demos</h4>
-                    <div class="line line-center mb-3"></div>
+                <div class="row mt-4 mx-5 py-4 ps-2 text-center">
+                    <div class="col-sm-12">
+                        <h3 class="fs-1" id="ac">Application Comparision</h3>
+                    </div>
                 </div>
-            </div>
-            <div class="row mx-5 py-2 mb-1">
-                <div class="col-sm-4">
-                    <p class=" text-center bg1 py-2 text-white fw-bold">My UX</p>
-                    <p>To watch a demo the user may select the demo button on the home screen, or the demo icon on the
-                        tab bar. The user is taken to the demo categories page where they have the option to scroll and
-                        find the muscle group they want, or they can search for it. After this they can shown the
-                        exercises for that specific group. Again, the user can scroll to find the exercises they want or
-                        search for it. Once selected they are taken to a screen that displays a demonstration video of
-                        the exercise, as well as there being written instructions below. These videos would be made by
-                        the gym employees and feature verbal instructions throughout meaning the user need not read
-                        alongside watching the video, they may listen whilst trying to mimic the exercise, though the
-                        option to read along is always there. </p>
+
+                <div class="row mx-5 py-2">
+                    <div class="col-sm-12 px-5">
+                        <p>As well as my own UX design, I will also look at a mobile application called Virtuagym and
+                            JEFIT.
+                            Unfortunately, since my design is centered around being a member of a gym I am limited when
+                            it
+                            comes to looking at similar apps i.e. I can’t access other gym-based applications as I am
+                            not a
+                            member. Luckily I am a member of one gym and thus can use Virtuagym in my comparison, for
+                            the
+                            second real life example required I found an application that offers exercise demos but
+                            isn’t
+                            tied to a gym as it is a trait shared with my UX design. Due to these discrepancies, as well
+                            as
+                            the fact I have built upon my app so it is not identical to ones I’m aware of/offers more
+                            interactions, I can’t give four of the exact same activities that can be performed.
+                        </p>
+                    </div>
                 </div>
-                <div class="col-sm-4">
-                    <p class="text-center bg2 py-2 text-white fw-bold">Virtuagym</p>
-                    <p>This is not a feature offered by this application</p>
-                </div>
-                <div class="col-sm-4">
-                    <p class="text-center bg1 py-2 text-white fw-bold">JEFIT</p>
-                    <p>To get a demo the user must select the exercises icon in the tab bar. They are taken to a screen
-                        that displays the different muscle groups, though there is no search option. Once the user
-                        selects a muscle group, they are taken to a page that shows a list of exercises. On this page,
-                        the user may choose to filter the exercises by equipment or make use of a search bar featured at
-                        the top. There is also a ‘view from’ section that includes my fav, recent, and custom options.
-                        Once the user selects an exercise there is a simple gif displaying the exercise, if you click
-                        ‘play video’ you are prompted to buy a subscription to the application. Below the gif is a set
-                        of written steps the user can follow, and tips for the exercise.</p>
-                </div>
-            </div>
             </div>
 
             <div class="reveal">
-            <div class="row mx-5 py-2  text-center">
-                <div class="col-sm-12 px-5">
-                    <h4 class="mt-4">4. View notifications</h4>
-                    <div class="line line-center mb-3"></div>
+                <div class="row mx-5 py-2 mt-5  text-center">
+                    <div class="col-sm-12 px-5 ">
+                        <p class="fs-3 fw-bold">Four activities that can be preformed</p>
+                    </div>
                 </div>
-            </div>
-            <div class="row mx-5 py-2 mb-5 ">
-                <div class="col-sm-4">
-                    <p class=" text-center bg1 py-2 text-white fw-bold">My UX</p>
-                    <p>To view notifications the user can click the bell icon directly from their home screen.</p>
+                <div class="row mx-5 py-2 mt-3  text-center">
+                    <div class="col-sm-12 px-5">
+                        <h4 class="mt-4">1. Gym Check In</h4>
+                        <div class="line line-center mb-3"></div>
+                    </div>
                 </div>
-                <div class="col-sm-4">
-                    <p class="text-center bg2 py-2 text-white fw-bold">Virtuagym</p>
-                    <p>To view notifications the user must click the profile icon in the tab bar. On their profile they
-                        can then select the notification bell. </p>
+                <div class="row mx-5 py-2 mb-4 ">
+                    <div class="col-sm-4">
+                        <p class=" text-center bg1 py-2 text-white fw-bold">My UX</p>
+                        <p>To check into the gym the user must select the check in code button on the home screen, this
+                            brings up the QR code which is then scannable at their gym location.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p class="text-center bg2 py-2 text-white fw-bold">Virtuagym</p>
+                        <p>To check into the gym the user must select the check in code button on the home screen, this
+                            brings up the QR code which is then scannable at their gym location. </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p class="text-center bg1 py-2 text-white fw-bold">JEFIT</p>
+                        <p>This is not a feature offered by this application </p>
+                    </div>
                 </div>
-                <div class="col-sm-4">
-                    <p class="text-center bg1 py-2 text-white fw-bold">JEFIT</p>
-                    <p>To view notifications the can either go to the discover tab where they will bring the bell icon,
-                        or the user can profile icon in the tab bar and on their profile, they can then select the
-                        notification bell.</p>
-                </div>
-            </div>
             </div>
 
             <div class="reveal">
-            <div class="row mx-5 py-2 mt-5 text-center">
-                <div class="col-sm-12 px-5 ">
-                    <p class="fs-3 fw-bold">Evaluations with screenshots</p>
+                <div class="row mx-5 py-2 mt-1 text-center">
+                    <div class="col-sm-12 px-5">
+                        <h4 class="mt-4">2. Join classes</h4>
+                        <div class="line line-center mb-3"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="row mx-5 py-2 mt-3 text-center">
-                <div class="col-sm-12 px-5">
-                    <h4 class="mt-4">What information can the user control/change? </h4>
-                    <div class="line line-center mb-3"></div>
+                <div class="row mx-5 py-2 mb-1">
+                    <div class="col-sm-4">
+                        <p class=" text-center bg1 py-2 text-white fw-bold">My UX</p>
+                        <p>To join a class the user may select the schedule button on the home screen, or the schedule
+                            icon
+                            on the tab bar. This will bring up the schedule where they can scroll to find a class on a
+                            specific date, or they may open the monthly calendar in the top right corner, or they may
+                            choose
+                            to click the filter icon to filter by classes. Once the user finds a class they wish to join
+                            they can click on it, another screen opens displaying more in-depth details and a join
+                            button.
+                            Assuming there is available space, the user is then added to the class list. </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p class="text-center bg2 py-2 text-white fw-bold">Virtuagym</p>
+                        <p>To join a class the user must select the schedule button on the home screen. This will bring
+                            up
+                            the schedule where they can find scroll to find a class on a specific date, or they may open
+                            the
+                            monthly calendar. There is also the option to filter by class but the typical filter
+                            iconography
+                            isn’t used. Once the user finds a class they wish to join, they can click on it. Some
+                            classes
+                            require ‘Small Group PT credits’ to join, whereas some aren’t restricted to this
+                            requirement.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p class="text-center bg1 py-2 text-white fw-bold">JEFIT</p>
+                        <p>As JEFIT is not directly linked to a gym this is not a feature offered by this application
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="row mx-5 py-2">
-                <div class="col-sm-4">
-                    <p class=" text-center bg1 py-2 text-white fw-bold">My UX</p>
-                    <p>The user can control and change their own account information </p> <br>
-                    <img src="images/Me.png" width="250px" class="mx-auto d-block" />
-                </div>
-                <div class="col-sm-4">
-                    <p class="text-center bg2 py-2 text-white fw-bold">Virtuagym</p>
-                    <p>The user can control and change their own account information </p> <br>
-                    <img src="images/Virtua-account.jpg" width="250px" class="mx-auto d-block" />
-                </div>
-                <div class="col-sm-4">
-                    <p class="text-center bg1 py-2 text-white fw-bold">JEFIT</p>
-                    <p>The user can control and change in-app workout plans as well as control and change their own
-                        account information. </p>
-                    <img src="images/JETFIT-account.jpg" width="225px" class="mx-auto d-block" />
-                </div>
-            </div>
             </div>
 
             <div class="reveal">
-            <div class="row mx-5 py-2 text-center pt-5 mt-4">
-                <div class="col-sm-12 px-5">
-                    <h4>How does the application lead the user? </h4>
-                    <div class="line line-center mb-3"></div>
+                <div class="row mx-5 py-2  text-center">
+                    <div class="col-sm-12 px-5">
+                        <h4 class="mt-4">3. View demos</h4>
+                        <div class="line line-center mb-3"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="row mx-5 py-2">
-                <div class="col-sm-4">
-                    <p class=" text-center bg1 py-2 text-white fw-bold">My UX</p>
-                    <p> "Help" / "Learn More" section not show in UX prototype though it would be featured in the
-                        settings tab. There is an information icon featured by the check-ins section of the user profile
-                        to help explain that particular feature of the application. </p> <br>
-                    <img src="images/Me – 1.png" width="250px" class="mx-auto d-block" />
+                <div class="row mx-5 py-2 mb-1">
+                    <div class="col-sm-4">
+                        <p class=" text-center bg1 py-2 text-white fw-bold">My UX</p>
+                        <p>To watch a demo the user may select the demo button on the home screen, or the demo icon on
+                            the
+                            tab bar. The user is taken to the demo categories page where they have the option to scroll
+                            and
+                            find the muscle group they want, or they can search for it. After this they can shown the
+                            exercises for that specific group. Again, the user can scroll to find the exercises they
+                            want or
+                            search for it. Once selected they are taken to a screen that displays a demonstration video
+                            of
+                            the exercise, as well as there being written instructions below. These videos would be made
+                            by
+                            the gym employees and feature verbal instructions throughout meaning the user need not read
+                            alongside watching the video, they may listen whilst trying to mimic the exercise, though
+                            the
+                            option to read along is always there. </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p class="text-center bg2 py-2 text-white fw-bold">Virtuagym</p>
+                        <p>This is not a feature offered by this application</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p class="text-center bg1 py-2 text-white fw-bold">JEFIT</p>
+                        <p>To get a demo the user must select the exercises icon in the tab bar. They are taken to a
+                            screen
+                            that displays the different muscle groups, though there is no search option. Once the user
+                            selects a muscle group, they are taken to a page that shows a list of exercises. On this
+                            page,
+                            the user may choose to filter the exercises by equipment or make use of a search bar
+                            featured at
+                            the top. There is also a ‘view from’ section that includes my fav, recent, and custom
+                            options.
+                            Once the user selects an exercise there is a simple gif displaying the exercise, if you
+                            click
+                            ‘play video’ you are prompted to buy a subscription to the application. Below the gif is a
+                            set
+                            of written steps the user can follow, and tips for the exercise.</p>
+                    </div>
                 </div>
-                <div class="col-sm-4">
-                    <p class="text-center bg2 py-2 text-white fw-bold">Virtuagym</p>
-                    <p>"Help" section is featured in the settings. From here the user can opt to ask a question, report
-                        an app problem, request an app feature, or write a review. </p> <br>
-                    <img src="images/Virtua-Help.jpg" width="250px" class="mx-auto d-block mt-5 pt-2" />
-                </div>
-                <div class="col-sm-4">
-                    <p class="text-center bg1 py-2 text-white fw-bold">JEFIT</p>
-                    <p>"Help" / "Learn More" sections not featured  </p>
-                </div>
-            </div>
             </div>
 
             <div class="reveal">
-            <div class="row mx-5 py-2 text-center pt-5 mt-4">
-                <div class="col-sm-12 px-5">
-                    <h4>Can the user make changes in the interface?</h4>
-                    <div class="line line-center mb-3"></div>
+                <div class="row mx-5 py-2  text-center">
+                    <div class="col-sm-12 px-5">
+                        <h4 class="mt-4">4. View notifications</h4>
+                        <div class="line line-center mb-3"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="row mx-5 py-2">
-                <div class="col-sm-4">
-                    <p class=" text-center bg1 py-2 text-white fw-bold">My UX</p>
-                    <p>Doesn't allow the user to make changes in the interface </p>
+                <div class="row mx-5 py-2 mb-5 ">
+                    <div class="col-sm-4">
+                        <p class=" text-center bg1 py-2 text-white fw-bold">My UX</p>
+                        <p>To view notifications the user can click the bell icon directly from their home screen.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p class="text-center bg2 py-2 text-white fw-bold">Virtuagym</p>
+                        <p>To view notifications the user must click the profile icon in the tab bar. On their profile
+                            they
+                            can then select the notification bell. </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p class="text-center bg1 py-2 text-white fw-bold">JEFIT</p>
+                        <p>To view notifications the can either go to the discover tab where they will bring the bell
+                            icon,
+                            or the user can profile icon in the tab bar and on their profile, they can then select the
+                            notification bell.</p>
+                    </div>
                 </div>
-                <div class="col-sm-4">
-                    <p class="text-center bg2 py-2 text-white fw-bold">Virtuagym</p>
-                    <p>Doesn't allow the user to make changes in the interface</p>
-
-                </div>
-                <div class="col-sm-4">
-                    <p class="text-center bg1 py-2 text-white fw-bold">JEFIT</p>
-                    <p>Application allows the user to change the privacy settings in the app, i.e., who can view the
-                        user’s training/body status, and their community activity.  </p> <br>
-                    <img src="images/JETFIT-privacy.jpg" width="250px" class="mx-auto d-block" />
-                </div>
-            </div>
-            </div>
-
-            <div class="reveal">
-            <div class="row mx-5 py-2 text-center pt-5 mt-4">
-                <div class=" col-sm-12 px-5">
-                    <h4>Is the interface "inductive" or "deductive"? </h4>
-                    <div class="line line-center mb-3"></div>
-                </div>
-            </div>
-            <div class="row mx-5 py-2">
-                <div class="col-sm-4">
-                    <p class=" text-center bg1 py-2 text-white fw-bold">My UX</p>
-                    <p>All of these apps mainly operate on the presumption that the user understands standard
-                        iconography used in applications e.g., a house signifying the home screen, or shoulders and head
-                        signifying the profile.<br>
-                        My UX design has one inductive feature, that being the information modal that pops up when the
-                        information icon is pressed (which is itself a deductive feature) to explain the check ins
-                        section. </p><br>
-                    <img src="images/Me – 1.png" width="250px" class="mx-auto d-block" />
-                </div>
-                <div class="col-sm-4">
-                    <p class="text-center bg2 py-2 text-white fw-bold">Virtuagym</p>
-                    <p>All of these apps mainly operate on the presumption that the user understands standard
-                        iconography used in applications e.g., a house signifying the home screen, or shoulders and head
-                        signifying the profile. </p>
-
-                </div>
-                <div class="col-sm-4">
-                    <p class="text-center bg1 py-2 text-white fw-bold">JEFIT</p>
-                    <p>All of these apps mainly operate on the presumption that the user understands standard
-                        iconography used in applications e.g., a house signifying the home screen, or shoulders and head
-                        signifying the profile. </p>
-                </div>
-            </div>
             </div>
 
             <div class="reveal">
-            <div class="row mx-5 py-2 text-center pt-5 mt-4">
-                <div class="col-sm-12 px-5">
-                    <h4>Does the application offer a "progressive disclosure"?</h4>
-                    <div class="line line-center mb-3"></div>
+                <div class="row mx-5 py-2 mt-5 text-center">
+                    <div class="col-sm-12 px-5 ">
+                        <p class="fs-3 fw-bold">Evaluations with screenshots</p>
+                    </div>
+                </div>
+                <div class="row mx-5 py-2 mt-3 text-center">
+                    <div class="col-sm-12 px-5">
+                        <h4 class="mt-4">What information can the user control/change? </h4>
+                        <div class="line line-center mb-3"></div>
+                    </div>
+                </div>
+                <div class="row mx-5 py-2">
+                    <div class="col-sm-4">
+                        <p class=" text-center bg1 py-2 text-white fw-bold">My UX</p>
+                        <p>The user can control and change their own account information </p> <br>
+                        <img src="images/Me.png" width="250px" class="mx-auto d-block" />
+                    </div>
+                    <div class="col-sm-4">
+                        <p class="text-center bg2 py-2 text-white fw-bold">Virtuagym</p>
+                        <p>The user can control and change their own account information </p> <br>
+                        <img src="images/Virtua-account.jpg" width="250px" class="mx-auto d-block" />
+                    </div>
+                    <div class="col-sm-4">
+                        <p class="text-center bg1 py-2 text-white fw-bold">JEFIT</p>
+                        <p>The user can control and change in-app workout plans as well as control and change their own
+                            account information. </p>
+                        <img src="images/JETFIT-account.jpg" width="225px" class="mx-auto d-block" />
+                    </div>
                 </div>
             </div>
-            <div class="row mx-5 py-2">
-                <div class="col-sm-4">
-                    <p class=" text-center bg1 py-2 text-white fw-bold">My UX</p>
-                    <p>This application offers progressive disclosure with its use of filter icons that when clicked
-                        open up
-                        to show the filter option, as well as the calendar icon that when clicked opens the calendar
-                        modal.
-                    </p><br>
-                    <img src="images/Schedule – 1.png" width="250px" class="mx-auto d-block" />
-                </div>
-                <div class="col-sm-4">
-                    <p class="text-center bg2 py-2 text-white fw-bold">Virtuagym</p>
-                    <p>This application offers progressive disclosure also in its schedule filter and calendar. </p><br>
-                    <img src="images/Virtua-calender.jpg" width="250px" class="mx-auto d-block mt-5 pt-5" />
 
+            <div class="reveal">
+                <div class="row mx-5 py-2 text-center pt-5 mt-4">
+                    <div class="col-sm-12 px-5">
+                        <h4>How does the application lead the user? </h4>
+                        <div class="line line-center mb-3"></div>
+                    </div>
                 </div>
-                <div class="col-sm-4">
-                    <p class="text-center bg1 py-2 text-white fw-bold">JEFIT</p>
-                    <p>JEFIT offers progressive disclosure through the various tabs you can skim through to find
-                        exercises.
-                        As well as a search tab on the workout page that when clicked expands to show a wide range of
-                        search
-                        options. </p><br>
-                    <img src="images/JETFIT-filter.jpg" width="250px" class="mx-auto d-block" />
+                <div class="row mx-5 py-2">
+                    <div class="col-sm-4">
+                        <p class=" text-center bg1 py-2 text-white fw-bold">My UX</p>
+                        <p> "Help" / "Learn More" section not show in UX prototype though it would be featured in the
+                            settings tab. There is an information icon featured by the check-ins section of the user
+                            profile
+                            to help explain that particular feature of the application. </p> <br>
+                        <img src="images/Me – 1.png" width="250px" class="mx-auto d-block" />
+                    </div>
+                    <div class="col-sm-4">
+                        <p class="text-center bg2 py-2 text-white fw-bold">Virtuagym</p>
+                        <p>"Help" section is featured in the settings. From here the user can opt to ask a question,
+                            report
+                            an app problem, request an app feature, or write a review. </p> <br>
+                        <img src="images/Virtua-Help.jpg" width="250px" class="mx-auto d-block mt-5 pt-2" />
+                    </div>
+                    <div class="col-sm-4">
+                        <p class="text-center bg1 py-2 text-white fw-bold">JEFIT</p>
+                        <p>"Help" / "Learn More" sections not featured  </p>
+                    </div>
                 </div>
             </div>
+
+            <div class="reveal">
+                <div class="row mx-5 py-2 text-center pt-5 mt-4">
+                    <div class="col-sm-12 px-5">
+                        <h4>Can the user make changes in the interface?</h4>
+                        <div class="line line-center mb-3"></div>
+                    </div>
+                </div>
+                <div class="row mx-5 py-2">
+                    <div class="col-sm-4">
+                        <p class=" text-center bg1 py-2 text-white fw-bold">My UX</p>
+                        <p>Doesn't allow the user to make changes in the interface </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p class="text-center bg2 py-2 text-white fw-bold">Virtuagym</p>
+                        <p>Doesn't allow the user to make changes in the interface</p>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <p class="text-center bg1 py-2 text-white fw-bold">JEFIT</p>
+                        <p>Application allows the user to change the privacy settings in the app, i.e., who can view the
+                            user’s training/body status, and their community activity.  </p> <br>
+                        <img src="images/JETFIT-privacy.jpg" width="250px" class="mx-auto d-block" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="row mx-5 py-2 text-center pt-5 mt-4">
+                    <div class=" col-sm-12 px-5">
+                        <h4>Is the interface "inductive" or "deductive"? </h4>
+                        <div class="line line-center mb-3"></div>
+                    </div>
+                </div>
+                <div class="row mx-5 py-2">
+                    <div class="col-sm-4">
+                        <p class=" text-center bg1 py-2 text-white fw-bold">My UX</p>
+                        <p>All of these apps mainly operate on the presumption that the user understands standard
+                            iconography used in applications e.g., a house signifying the home screen, or shoulders and
+                            head
+                            signifying the profile.<br>
+                            My UX design has one inductive feature, that being the information modal that pops up when
+                            the
+                            information icon is pressed (which is itself a deductive feature) to explain the check ins
+                            section. </p><br>
+                        <img src="images/Me – 1.png" width="250px" class="mx-auto d-block" />
+                    </div>
+                    <div class="col-sm-4">
+                        <p class="text-center bg2 py-2 text-white fw-bold">Virtuagym</p>
+                        <p>All of these apps mainly operate on the presumption that the user understands standard
+                            iconography used in applications e.g., a house signifying the home screen, or shoulders and
+                            head
+                            signifying the profile. </p>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <p class="text-center bg1 py-2 text-white fw-bold">JEFIT</p>
+                        <p>All of these apps mainly operate on the presumption that the user understands standard
+                            iconography used in applications e.g., a house signifying the home screen, or shoulders and
+                            head
+                            signifying the profile. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal">
+                <div class="row mx-5 py-2 text-center pt-5 mt-4">
+                    <div class="col-sm-12 px-5">
+                        <h4>Does the application offer a "progressive disclosure"?</h4>
+                        <div class="line line-center mb-3"></div>
+                    </div>
+                </div>
+                <div class="row mx-5 py-2">
+                    <div class="col-sm-4">
+                        <p class=" text-center bg1 py-2 text-white fw-bold">My UX</p>
+                        <p>This application offers progressive disclosure with its use of filter icons that when clicked
+                            open up
+                            to show the filter option, as well as the calendar icon that when clicked opens the calendar
+                            modal.
+                        </p><br>
+                        <img src="images/Schedule – 1.png" width="250px" class="mx-auto d-block" />
+                    </div>
+                    <div class="col-sm-4">
+                        <p class="text-center bg2 py-2 text-white fw-bold">Virtuagym</p>
+                        <p>This application offers progressive disclosure also in its schedule filter and calendar. </p>
+                        <br>
+                        <img src="images/Virtua-calender.jpg" width="250px" class="mx-auto d-block mt-5 pt-5" />
+
+                    </div>
+                    <div class="col-sm-4">
+                        <p class="text-center bg1 py-2 text-white fw-bold">JEFIT</p>
+                        <p>JEFIT offers progressive disclosure through the various tabs you can skim through to find
+                            exercises.
+                            As well as a search tab on the workout page that when clicked expands to show a wide range
+                            of
+                            search
+                            options. </p><br>
+                        <img src="images/JETFIT-filter.jpg" width="250px" class="mx-auto d-block" />
+                    </div>
+                </div>
             </div>
 
             <div class="reveal">
