@@ -1,0 +1,3 @@
+<!--PLEASE READ-->
+<!--The code runs slightly slow, probably due to the amount of content, please allow time for the website to load correctly
+before interacting with the elements-->
