@@ -84,11 +84,18 @@
             ol {
                 font-size: 1.3rem;
                 font-weight: bold;
-                line-height: 3.7rem;
+                line-height: 2rem;
             }
 
             ul {
                 list-style-type: none;
+            }
+
+            .sub {
+                list-style-type: lower-roman;
+                font-weight: normal;
+                font-size: 1.15rem;
+                line-height: 2.4rem;
             }
 
             .indexbtn {
@@ -136,8 +143,8 @@
                 color: white;
             }
 
-            .fa:hover,
-            .btt:hover {
+            .fa-twitter:hover,
+            .fa-instagram:hover {
                 color: #84B2DB;
             }
 
@@ -162,9 +169,9 @@
                         class="img-fluid ms-5 py-2" /></a>
             </div>
             <ul class="nav justify-content-center">
-                <button class="tablinks btn me-2" onclick="openTab(event, 'index')">Home</button>
+                <button class="tablinks btn me-2" onclick="openTab(event, 'index')" id="defaultOpen">Home</button>
                 <button class="tablinks btn me-2" onclick="openTab(event, 'about')">About</button>
-                <button class="tablinks btn me-2" onclick="openTab(event, 'sites')" id="defaultOpen">Websites</button>
+                <button class="tablinks btn me-2" onclick="openTab(event, 'code')">Coding</button>
                 <button class="tablinks btn me-1" onclick="openTab(event, 'videos')">Videos</button>
                 <button class="tablinks btn me-2" onclick="openTab(event, 'photos')">Photos</button>
                 <button class="tablinks btn me-5" onclick="openTab(event, 'art')">Art</button>
@@ -181,13 +188,25 @@
         <div class="container ms-5 me-5 my-5 pt-3 pb-3">
             <div class="row mt-5 mt-4 mb-5 mx-5">
                 <div class="col-sm-7">
-                    <img src="images/PI.png" class="img-fluid ms-5 ps-5" width="90%" />
+                    <img src="images/PI.png" class="img-fluid ms-5" width="90%" />
                 </div>
-                <div class="col-sm-5 my-5">
-                    <ol class="mt-2 ps-0">
+                <div class="col-sm-5 ">
+                    <ol class="ps-0">
                         <li><button class="indexbtn btn" onclick="openTab(event, 'about')">About</button></li>
-                        <li><button class="indexbtn btn" onclick="openTab(event, 'sites')">Websites</button></li>
-                        <li><button class="indexbtn btn" onclick="openTab(event, 'videos')">Videos</button></li>
+                        <li><button class="indexbtn btn" onclick="openTab(event, 'code')">Coding</button>
+                            <ol>
+                                <li class="sub">CONS Film Festival</li>
+                                <li class="sub">Form Fitness</li>
+                                <li class="sub">Catch The Apple</li>
+                            </ol>
+                        </li>
+                        <li><button class="indexbtn btn" onclick="openTab(event, 'videos')">Videos</button>
+                            <ol>
+                                <li class="sub">The Observational Camera</li>
+                                <li class="sub">Meis En Scene</li>
+                                <li class="sub">Responding To The Archive</li>
+                            </ol>
+                        </li>
                         <li><button class="indexbtn btn" onclick="openTab(event, 'photos')">Photo Editing</button></li>
                         <li><button class="indexbtn btn" onclick="openTab(event, 'art')">Art</button></li>
                     </ol>
@@ -229,11 +248,11 @@
     </div>
 
     <!--Content in 3rd tab-->
-    <div id="sites" class="tabcontent">
+    <div id="code" class="tabcontent">
         <div class="container mb-5 mt-3">
             <div class="row mt-4 mx-5 pt-4 ">
                 <div class="col-sm-12">
-                    <h3 class="text-black mb-4 mt-5">The Film Festival</h3>
+                    <h3 class="text-black mb-4 mt-5">CONS Film Festival</h3>
                 </div>
             </div>
             <div class="row mx-5">
@@ -274,7 +293,7 @@
                         website. With two strong colours accented around the website I chose to keep the other colours
                         neutral as to keep it from being too overwhelming.</p>
                     <a href="https://laurac00.github.io/assignments/film-festival/" title="Film Festival"
-                        target="_blank">Click here to view the website</a>
+                        target="_blank"><u>Click here to view the website</u></a>
                 </div>
             </div>
             <div class="row mx-5 mt-4 mb-2">
@@ -288,7 +307,7 @@
             <div class="container mb-5 mt-3 ">
                 <div class="row mt-4 mx-5 pt-4 text-light">
                     <div class="col-sm-12">
-                        <h3 class=" mb-4 mt-5">The Application Design</h3>
+                        <h3 class=" mb-4 mt-5">Form Fitness</h3>
                     </div>
                 </div>
                 <div class="row mx-5 text-light">
@@ -316,7 +335,6 @@
                 </div>
                 <div class="row mx-5 text-light">
                     <div class="col-sm-12">
-
                         <p>The mobile application I designed was called Form Fitness, it was a mobile application for
                             gym
                             members. The main application would be to scan into the gym upon arrival. It included other
@@ -334,10 +352,15 @@
                             somewhat of a simply geometric shape. The main colour I went with was blue as it seemed a
                             popular colour among other fitness related apps, and the secondary colour used was orange,
                             the
-                            complimentary colour to the blue. </p>
+                            complimentary colour to the blue.
+                            <br>You can see a live preview of the prototype <a
+                                href="https://xd.adobe.com/view/f2d7b1d1-42ea-4ae6-96dd-869e0127d135-a784/?fullscreen"
+                                target="_blank" class="text-light"><u>here</u></a></p>
+                        </p>
+
 
                         <a href="https://laurac00.github.io/assignments/assignment-4/" class="text-light"
-                            title="Film Festival" target="_blank">Click here to view the website</a>
+                            title="Film Festival" target="_blank"><u>Click here to view the website</u></a>
                     </div>
                 </div>
 
@@ -348,19 +371,201 @@
                 </div>
             </div>
         </div>
+
+        <div class="container mb-5 mt-3">
+            <div class="row mt-4 mx-5 pt-4 ">
+                <div class="col-sm-12">
+                    <h3 class="text-black mb-4 mt-5">Catch The Apple</h3>
+                </div>
+            </div>
+            <div class="row mx-5">
+                <div class="col-sm-8">
+                    <p class="text-left">This next project was developed in my Generative Media module in which we
+                        worked with p5.js.
+                        For tihs project we were creating a creative generative media project that was critical and
+                        technical;demonstrating the practice of working with and thinking with computational procedures.
+                        In addition to engaging with computer code using exploratory methods, the project also explored
+                        the ways that computation impacts experiences and realities; not just creating a generative
+                        project, but drawing attention to how computation influences us. </p>
+                    <p>The main function of my for this project software was to enforce periodical and timed breaks for
+                        a user, from their computer screen. To carry this out I created a game the user can interact
+                        with called “Catch the Apple”, upon which my main software would then be able to run. To win the
+                        game the user must collect 45 apples and if they miss 10 apples they lose. The game works by
+                        drawing an apple vertically just out of view of top of the screen from which it will begin to
+                        fall, and after one iteration its horizontal position is randomized.</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/catch.png" class="img-fluid">
+                </div>
+            </div>
+            <div class="row mx-5">
+                <div class="col-sm-12">
+                    <p>In order to enforce the screen break software, my code uses frameCount(). It’s important to note
+                        that for the purposes of the project, I have every second acting as what would be a minute of
+                        real-time, so 1 minute is one hour, and 5 seconds is 5 minutes. So once the frame count reaches
+                        3600 (1 minute), the gameplay is paused, preserving the user’s activity, and a black screen is
+                        displayed.</p>
+
+                    <p>This code sets out to explore the need and benefits of taking a break from your computer screen,
+                        something many people don’t do regularly or of their own accord. Although the software can’t
+                        physically force a user to get up from their seat — assuming they have been sitting — and start
+                        stretching, it still gives their eyes a break from the computer screen. Future work on this
+                        software could allow for exemptions to be made, in the case of an approaching deadline where you
+                        haven’t yet completed the work, or not forcing the break if the user is in the middle of
+                        uploading something. If used in an office setting the times could possibly be altered by the
+                        boss, making the work period a maximum of 2 hours with a 5-minute break in between. </p>
+                    </p>
+                    <a href="https://editor.p5js.org/LauraC00/sketches/xIO-OQnX3" title="Catch the Apple"
+                        target="_blank"><u>Click here to view the project</u></a>
+                </div>
+            </div>
+            <div class="row mx-5 mt-4 mb-2">
+                <div class="col-sm-12 mb-5 ">
+                    <img src="images/game.png" class="img-fluid" />
+                </div>
+            </div>
+        </div>
     </div>
-    </div>
+
 
     <!--Content in 4th tab-->
     <div id="videos" class="tabcontent">
         <div class="container mb-5 mt-3">
-            <div class="row mt-4 mx-5 pt-4 text-center">
+            <div class="row mt-4 mx-5 pt-4 ">
                 <div class="col-sm-12">
-                    <h3 class="fs-2">Videos </h3>
-                    <hr>
-                    <div class="video mx-auto d-block">
-                        <video height="500" width="275" controls>
-                            <source src="images/Prototype.mp4" type="video/mp4">
+                    <h3 class="text-black mb-4 mt-5">The Observational Camera</h3>
+                </div>
+            </div>
+            <div class="row mx-5">
+                <div class="col-sm-12 ">
+                    <p>The first video project I did consistent of gathering a series of 4-3 minute shots and editing
+                        them with different techniques. The requirements were to create 4 short observational shots of
+                        domestic and outdoor
+                        spaces of our choice which explore distinctions of the space, textures or histories to build an
+                        image of our chosen environment /space. Below are 3 of my works from this project.
+                    </p><br>
+                    <h5 class="fs-3">Gaillimh</h5>
+                    <p>As Galway is a rather old city with old architecture, I decided to use this as inspiration for my
+                        editing. An architectural photographer I like is Keith Dotson. His photos are greyscale but
+                        since I’m working with video I decided to colour my clips sepia to mimic the old film style.
+                        Using fractal noise I created dust-like spots and strings that were animated and added in a bit
+                        of “glitching” by moving the film’s position. Using the offset effect gave that film roll style
+                        at the beginning and end of the video. Between clips I chose not to use any transition because I
+                        thought the harshness added to the style. </p>
+                    <div class="video mx-auto d-block mt-4">
+                        <video height="405" width="720" controls>
+                            <source src="images/Gaillimh.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h5 class="fs-3 mt-5">Homeward Bound</h5>
+                    <p>I picked one of the Adobe looks that I felt created nice colouring to add over my footage and
+                        used a cross dissolve to depict different points of my journey. I feel this transition type
+                        helps give the feeling of the passage of time. One disadvantage of using the bus’s movement was
+                        its inconsistent speed, so I needed to increase and decrease my film speed in areas to make it
+                        look more cohesive. </p>
+                    <div class="video mx-auto d-block mt-4">
+                        <video height="405" width="720" controls>
+                            <source src="images/HomewardBound.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h5 class="fs-3 mt-5">Nature Hues</h5>
+                    <p>I took a few different shots of the river as I moved down towards the ducks. I found myself using
+                        an analogous colour scheme with highly saturated blues and greens which creates a sense of calm.
+                        I feel this colour method draws the eyes to the organic elements of the shots and away from the
+                        few man made structures. I was somewhat inspired by Isaac Levitan, who paints a lot of
+                        landscapes, and in his painting “Spring in Italy” he uses a lot of saturation. I tried to do a
+                        panning shot following the ducks along the water but due to my filming process being all
+                        handheld, the footage was shaky, so I decided to edit it with a transition and used this
+                        transition between all my clips.</p>
+                    <div class="video mx-auto d-block mt-4">
+                        <video height="405" width="720" controls>
+                            <source src="images/NatureHues.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-colour pb-5">
+            <div class="container mb-5 mt-3 ">
+                <div class="row mt-4 mx-5 pt-4 text-light">
+                    <div class="col-sm-12">
+                        <h3 class=" mb-4 mt-5">Meis En Scene</h3>
+                    </div>
+                </div>
+                <div class="row mx-5 text-light">
+                    <div class="col-sm-12">
+                        <p class="text-left">In this assignment we needed to create a short multimedia work of 3 mins
+                            where we
+                            consider production and scene design, lighting and formal aspects of composition.
+                            Key to this project was investigation into motion graphics, animation, multi channel and
+                            composites lighting, framing the use of computer-generated imagery, props devices and
+                            backgrounds.
+                            The aim of this project to build visually exciting and engaging piece that can occupy a
+                            number of different contexts, for example projections for live performance or animations
+                            that function as moving paintings or sculptures. Most importantly we needed to be able to
+                            tell a story in one scene.</p>
+                        <h5 class="fs-3 mt-5">Peek-A-Boo</h5>
+                        <p>I was inspired by William Kentridge’s charcoal animation style, so when drawing my frames
+                            digitally I decided to use a charcoal brush. Because of this I also opted to do my piece
+                            mainly in black and white. Using just a bit of colour made it easy to show when lights were
+                            turned on or off in the house and helps to guide the viewer's eye in the scene. I created
+                            some atmosphere with the wind and later use of rain sounds, and used the crying baby sound
+                            to help convey my story. I was also inspired by Ben Hibon, specifically in my design of the
+                            skeletal creature. </p>
+                        <p>First Baby crying sound by jamesmbock on FreeSound <br>
+                            Secon baby crying sound by panikko on FreeSound<br>
+                            Wind sound from Zapsplat.com<br>
+                            Rain sound by InspectorJ on FreeSound<br>
+                            Spooky Wind from Zapsplat.com
+                        </p>
+                    </div>
+                    <div class="video mx-auto d-block mt-4">
+                        <video height="405" width="720" controls>
+                            <source src="images/Animation.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mb-5 mt-3">
+            <div class="row mt-4 mx-5 pt-4 ">
+                <div class="col-sm-12">
+                    <h3 class="text-black mb-4 mt-5">Responding To The Archive</h3>
+                </div>
+            </div>
+            <div class="row mx-5">
+                <div class="col-sm-12 ">
+                    <p>For this last project we had you to engage with the NUI Galway Digital Collection’s Islandora
+                        Repository Oral History Collection’s Tuam Oral History Project as a means to explore how moving
+                        image projects can engage society and collective memory.The key aim of the Tuam Oral History
+                        Project is to enable the survivors of the Tuam institution and their families to tell their own
+                        life stories, in the way that they want them to be told. In that regard, members of the project
+                        team will record and archive the histories and life stories of survivors and their families, as
+                        well as the memories of others connected in any way with the institution or with those who spent
+                        time there. <br> The aim of this assignment was to get us
+                        to engage with various editing moving image techniques employed by artists included working with
+                        still images, found footage voice overs and text as a means to create our own response.
+                    </p>
+                    <h5 class="fs-3 mt-5">796</h5>
+                    <p>One of the survivors I found myself drawn to in the archive was Peter Mulryan, specifically the
+                        documentation he has in his archive i.e., the names of the babiein the home, the number of
+                        deatsh each year, and the cause of death. I knew I wanted to work with these in some way so I
+                        found a liste containing the names of the 796 babies that passed in the home. I also found a
+                        site that used the phrasing "The forgetting Angels of Tuam", and this gave me the idea for my
+                        video. I decided to light a candle in remeberance of the lost babies, and around the candle I
+                        placed little angel statues that were gotten for me from Lourdes. This idea was also inspired by
+                        the grave in tuam that has the Virgin Mary statue. I placed some little rocks that I have aorund
+                        the angles in my video, referencing the stone wall at which the Virgin Mary stands in the Tuam
+                        grave. </p>
+                    <p>In Premiere I made 36 copies of the original video, one video for one baby that died every year
+                        in the 36 years that the home was open. I did a voice over of myself saying the year, the name
+                        of one of tha babies that died that year, and the age at which they passed. This idea was
+                        sinprised by a work called A Sort of Joy (Thousands of Exhausted Things), that showed how
+                        impactful hearing data can be as opposed to reading it.<br> Music from BenSound
+                    </p>
+                    <div class="video mx-auto d-block mt-4">
+                        <video height="405" width="720" controls>
+                            <source src="images/Tuam.mp4" type="video/mp4">
                         </video>
                     </div>
                 </div>
@@ -399,7 +604,7 @@
                     <ul class="ps-0">
                         <li><button class="btn text-light ps-0" onclick="openTab(event, 'about')">About</button>
                         </li>
-                        <li><button class="btn text-light ps-0" onclick="openTab(event, 'sites')">Websites</button>
+                        <li><button class="btn text-light ps-0" onclick="openTab(event, 'code')">Coding</button>
                         </li>
                         <li><button class="btn text-light ps-0" onclick="openTab(event, 'videos')">Videos</button>
                         </li>
@@ -411,20 +616,20 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-5 text-light ps-5">
+                <div class="col-sm-4 text-light ps-5">
                     <h5 class="mb-3">Get in touch!</h5>
                     <p><i class="fa fa-envelope me-3"></i>
                         lauracrowley00@yahoo.ie</p>
                 </div>
-                <div class="col-sm-3 text-light ps-5">
-                    <h5 class="mb-3">Socials</h5>
+                <div class="col-sm-4 text-light ps-5">
+                    <h5 class="mb-3 ps-5">Socials</h5>
                     <a href="https://twitter.com/laura_ow" target="_blank"
                         title="Link to CONS Film Festival Twitter Page"
-                        class="fa fa-twitter text-decoration-none mb-4"></a>
+                        class="fa fa-twitter text-decoration-none mb-4 ps-5"></a>
                     </a><br>
                     <a href="https://www.instagram.com/_laura_c14/" target="_blank"
                         title="Link to CONS Film Festival Instagram Page"
-                        class="fa fa-instagram text-decoration-none"></a>
+                        class="fa fa-instagram text-decoration-none ps-5"></a>
                 </div>
             </div>
         </div>
